@@ -1,0 +1,12 @@
+<div>
+  <h3>My Name Is {{userName}}</h3>
+<!--  <img [src]="userImage" alt="Image">-->
+  <button [disabled]="!userStatus" (click)="onClickMe()" >Click Me</button>
+</div>
+<br>
+<div>
+  <input placeholder="Write Name" [(ngModel)]="name">
+  <button type="submit" (click)="onSubmit()">Submit Name</button>
+
+  <h2>I Am an {{name}}</h2>
+</div>
